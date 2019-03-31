@@ -1,0 +1,14 @@
+svg{
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: thick double navy;
+  background-color: lightblue;
+}
+
+circle{
+  fill: lavender;
+  stroke: green;
+  stroke-width: 5;
+}
