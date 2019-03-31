@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     name: 'index'
   }, {
     name: 'coord'
+  }, {
+    name: 'shape'
   }]
   let navBarEl = document.querySelector('#nav-bar')
   navItems.forEach(navItem => {

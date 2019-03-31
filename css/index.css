@@ -321,4 +321,15 @@ a.text-decoration{
 
 .right-panel{
   margin-left: 300px;
+	padding: 20px;
+	border-left: 1px dashed #000;
+}
+
+.nav-item{
+	padding: 10px 0;
+}
+
+.nav-item > a{
+	text-decoration: underline;
+	color: blue;
 }

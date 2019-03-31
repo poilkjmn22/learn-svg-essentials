@@ -1,0 +1,15 @@
+polygon{
+  stroke: black;
+}
+.fill-rull-nonezero{
+  fill: yellow;
+}
+
+.fill-rule-evenodd{
+  fill: #00ff00;
+}
+
+svg{
+  border: 1px solid #dedede;
+  margin: 10px;
+}
