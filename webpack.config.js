@@ -20,21 +20,25 @@ module.exports = {
             use: 'babel-loader'
         }, {
             test: /\.css$/,
-            use: [MiniCssExtractPlugin.loader, 'css-loader']
-            // use: ['style-loader', 'css-loader']
+            // use: [MiniCssExtractPlugin.loader, 'css-loader']
+            use: ['style-loader', 'css-loader']
+        }, {
+            test: /\.scss$/,
+            // use: [MiniCssExtractPlugin.loader, 'css-loader']
+            use: ['style-loader', 'css-loader', 'sass-loader']
         }]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin,
-        new MiniCssExtractPlugin({
-            filename: '[name].bundle.css',
-            publicPath: '/dist/'
-        }),
+        // new MiniCssExtractPlugin({
+        //     filename: '[name].bundle.css',
+        //     publicPath: '/dist/'
+        // }),
         autoWebPlugin
     ],
     resolve: {
         mainFields: ['jsnext:main', 'module', 'main'],
-        extensions: ['.js', '.css']
+        extensions: ['.js', '.css', '.scss', '.json']
     },
     output: {
         filename: '[name].bundle.js',

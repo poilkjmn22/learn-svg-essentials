@@ -1,21 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const navItems = [{
-    name: 'index',
-    title: '首页'
-  }, {
-    name: 'coord',
-    title: '坐标系统'
-  }, {
-    name: 'shape',
-    title: '基本形状'
-  }, {
-    name: 'docStructure',
-    title: '文档结构'
-  }, {
-    name: 'coordTransform',
-    title: '坐标系统变换'
-  }]
+  const navItems = require('../json/nav-item.json')
   let navBarEl = document.querySelector('#nav-bar')
   navItems.forEach(navItem => {
     var li = document.createElement('li')
