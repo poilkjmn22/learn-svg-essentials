@@ -11,10 +11,35 @@ function svg(tagName){
 
 function attr(elm, values){
   _.each(values, (v,k) => {
-    elm.setAttribute(_.kebabCase(k), v)
+    elm.setAttribute(k, v)
   })
+}
+
+function createSvgEl(tagName, attrs){
+  var svgEl = svg(tagName)
+  attr(svgEl, attrs)
+  return svgEl
+}
+
+function createGFlower(){
+  var gFlower = createSvgEl('g', {
+    id: 'flower'
+  })
+
+  var imageFlower = createSvgEl('image', {
+    'xlink:href': '/assets/svgs/flower.svg'
+  })
+  imageFlower.href.baseVal = '/assets/svgs/flower.svg'
+  gFlower.appendChild(imageFlower)
+  return gFlower
+}
+function setXLinkHref(el, url){
+  el.href.baseVal = url
 }
 export {
   svg,
-  attr
+  attr,
+  createSvgEl,
+  createGFlower,
+  setXLinkHref
 }

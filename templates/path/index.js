@@ -152,7 +152,7 @@ mTriangle.appendChild(triangle)
 var markerLine = svg('path')
 attr(markerLine, {
   d: 'M 10,20,100,20 A 20,30,0,0,1,120,50 L 120,110',
-  // style: 'marker-start: url(#mCircle);marker-mid: url(#mArrow);marker-end: url(#mTriangle);fill: none; stroke: black'
-  style: 'marker: url(#mCircle);fill: none; stroke: black'
+  style: 'marker-start: url(#mCircle);marker-mid: url(#mArrow);marker-end: url(#mTriangle);fill: none; stroke: black'
+  // style: 'marker: url(#mCircle);fill: none; stroke: black'
 })
 svgEl3.appendChild(markerLine)

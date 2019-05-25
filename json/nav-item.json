@@ -16,4 +16,7 @@
 }, {
   "name": "path",
   "title": "路径"
+}, {
+  "name": "filter",
+  "title": "滤镜"
 }]
